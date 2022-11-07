@@ -5,6 +5,7 @@ public class FullTicket extends Ticket{
     public FullTicket() {
         super();
     }
+    //coded by Manith Jayaba D/BCE/22/0006
 
     public FullTicket(int number, String departure, String arrive) {
         super(number, departure, arrive);
@@ -14,6 +15,7 @@ public class FullTicket extends Ticket{
         int option;
 
         System.out.println("Select arrival and destination :\n" +
+                //coded by Manith Jayaba D/BCE/22/0006
                 "\n" +
                 "[1]Colombo to Jaffna or Jaffna to Colombo\n" +
                 "[2]Anuradhapura to Jaffna or Jaffna to Anuradhapura\n" +
@@ -28,6 +30,7 @@ public class FullTicket extends Ticket{
             case 1:
                 price=1000f;
                 super.setNumber(super.getNumber()-1);
+                //coded by Manith Jayaba D/BCE/22/0006
                 break;
             case 2:
             case 5:
@@ -38,6 +41,7 @@ public class FullTicket extends Ticket{
             case 4:
                 price=400+((400*25)/100);
                 super.setNumber(super.getNumber()-1);
+                //coded by Manith Jayaba D/BCE/22/0006
                 break;
         }
     }

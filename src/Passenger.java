@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class Passenger {
     private Name name;
+    //coded by Manith Jayaba D/BCE/22/0006
     private int age;
     private Ticket ticket;
     private String gender;
 
     public Passenger() {
+        //coded by Manith Jayaba D/BCE/22/0006
         this.age = 0;
         this.gender = "null";
     }
@@ -15,6 +17,7 @@ public class Passenger {
         this.name = name;
         this.age = age;
         this.ticket = ticket;
+        //coded by Manith Jayaba D/BCE/22/0006
         this.gender = gender;
     }
 
@@ -38,6 +41,7 @@ public class Passenger {
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
+    //coded by Manith Jayaba D/BCE/22/0006
 
     public void setGender(String gender) {
         this.gender = gender;
@@ -50,6 +54,7 @@ public class Passenger {
     public int getAge() {
         return age;
     }
+    //coded by Manith Jayaba D/BCE/22/0006
 
     public Ticket getTicket() {
         return ticket;

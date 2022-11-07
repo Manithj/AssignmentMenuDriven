@@ -8,6 +8,7 @@ public class HalfTicket extends Ticket {
     public HalfTicket(int number, String departure, String arrive) {
         super(number, departure, arrive);
     }
+    //coded by Manith Jayaba D/BCE/22/0006
 
     public void price(){
         int option;
@@ -16,6 +17,7 @@ public class HalfTicket extends Ticket {
                 "\n" +
                 "[1]Colombo to Jaffna or Jaffna to Colombo\n" +
                 "[2]Anuradhapura to Jaffna or Jaffna to Anuradhapura\n" +
+                //coded by Manith Jayaba D/BCE/22/0006
                 "[3]Vavuniya to Jaffna of Jaffna to Vavuniya\n" +
                 "[4]Anuradhapura to Colombo or Colombo to Anuradhapura\n" +
                 "[5]Vavuniya to Colombo or Colombo to Vavuniya\n" +
@@ -27,6 +29,7 @@ public class HalfTicket extends Ticket {
             case 1:
                 price=500f;
                 super.setNumber(super.getNumber()-1);
+                //coded by Manith Jayaba D/BCE/22/0006
                 break;
             case 2:
             case 5:
@@ -37,6 +40,7 @@ public class HalfTicket extends Ticket {
             case 4:
                 price=200f;
                 super.setNumber(super.getNumber()-1);
+                //coded by Manith Jayaba D/BCE/22/0006
                 break;
         }
     }

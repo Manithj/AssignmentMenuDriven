@@ -2,17 +2,19 @@ import java.util.Scanner;
 public class Bus {
 
     static int [] arr=new int [50];
+    //coded by Manith Jayaba D/BCE/22/0006
 
     static int count=0;
 
-    static int snum;
     static Passenger pas[] = new Passenger[50];
     static  Seat s[]=new Seat[50];
+    //coded by Manith Jayaba D/BCE/22/0006
     static FullTicket ft[]=new FullTicket[50];
     static HalfTicket ht[]=new HalfTicket[50];
 
     static Name n[]=new Name[50];
     private String number,date,location,time;
+    //coded by Manith Jayaba D/BCE/22/0006
     private Seat seat;
 
 
@@ -25,26 +27,20 @@ public class Bus {
     }
 
     public static void bookNewSeatFromKB(){
-        for(int i=0;i<50;i++){
+        for(int i=count;i<50;i++){
 
             s[i]=new Seat();
             pas[i]=new Passenger();
             ft[i]=new FullTicket();
+            //coded by Manith Jayaba D/BCE/22/0006
             ht[i]=new HalfTicket();
             n[i]=new Name();
         }
         int option;
-        System.out.println("Enter Seat number :");
-        Scanner input=new Scanner(System.in);
-        snum= input.nextInt();
-        snum=snum-1;
-        if(s[snum].getBooked()==true){
-            System.out.println("sorry this seat is booked...");
-        }
-        else {
-            s[snum].setBooked(true);
-            n[snum].addNewName();
-            pas[snum].addNewPassengerFromKB();
+
+            s[count].setBooked(true);
+            n[count].addNewName();
+            pas[count].addNewPassengerFromKB();
             System.out.println("Enter ticket choice\n" +
                     "[1]Full ticket\n" +
                     "[2]Half ticket\n" +
@@ -54,20 +50,21 @@ public class Bus {
             option=input0.nextInt();
             switch (option){
                 case 1:
-                    ft[snum].price();
-                    s[snum].setBooked(true);
+                    ft[count].price();
+                    s[count].setBooked(true);
+                    //coded by Manith Jayaba D/BCE/22/0006
                     count=count+1;
-                    arr[snum]=snum;
+                    arr[count]=count;
                     break;
                 case 2:
-                    ht[snum].price();
-                    s[snum].setBooked(true);
+                    ht[count].price();
+                    s[count].setBooked(true);
                     count=count+1;
                     break;
                 default:
                     System.out.println("Error");
             }
-        }
+
         //not complete
 
     }
@@ -75,19 +72,21 @@ public class Bus {
     public static void printSummerySheet(){
         for(int i=0;i<50;i++){
             s[i]=new Seat();
+            //coded by Manith Jayaba D/BCE/22/0006
         }
-        for(int i=0;i<50;i++){
+        for(int i=0;i<count;i++){
             System.out.println("Name :"+n[i].getNameWithIns()+"\n" +
                     "Age :"+pas[i].getAge()+"\n" +
-                    "Gender :"+pas[i].getGender()+"\n" +
-                    "");
+                    "Gender :"+pas[i].getGender());
 
             if(ft[i].getPrice()>0){
                 System.out.println("Ticket Price :"+ft[i].getPrice());
+                //coded by Manith Jayaba D/BCE/22/0006
             }
             else{
                 System.out.println("Ticket Price :"+ht[i].getPrice());
             }
+            System.out.println("\n");
         }
     }
 

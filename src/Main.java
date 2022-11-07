@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         for(int i=0;i<50;i++){
+            //coded by Manith Jayaba D/BCE/22/0006
             s[i]=new Seat();
             pas[i]=new Passenger();
         }
@@ -27,6 +28,7 @@ public class Main {
                     "------------------------------------------------\n" +
                     " MENU \n" +
                     "------------------------------------------------\n" +
+                    //coded by Manith Jayaba D/BCE/22/0006
                     "[1]Check Availability\n" +
                     "[2]Book New Seat\n" +
                     "[3]Print Summary\n" +
@@ -45,6 +47,7 @@ public class Main {
                     break;
                 case 3:
                     Bus.printSummerySheet();
+                    //coded by Manith Jayaba D/BCE/22/0006
                     break;
                 case 4:
                     System.out.println("Exit");

@@ -1,6 +1,7 @@
 public class Ticket {
     private int number=50;
     private String departure,arrive;
+    //coded by Manith Jayaba D/BCE/22/0006
 
     public Ticket() {
         this.number = 0;
@@ -9,6 +10,7 @@ public class Ticket {
     }
 
     public Ticket(int number, String departure, String arrive) {
+        //coded by Manith Jayaba D/BCE/22/0006
         this.number = number;
         this.departure = departure;
         this.arrive = arrive;
@@ -19,6 +21,7 @@ public class Ticket {
     }
 
     public void setNumber(int number) {
+        //coded by Manith Jayaba D/BCE/22/0006
         this.number = number;
     }
 }
