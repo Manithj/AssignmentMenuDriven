@@ -17,9 +17,6 @@ public class Main {
             pas[i]=new Passenger();
         }
 
-        for(int i=0;i<50;i++){
-        s[i].setBooked(false);
-    }
 
 
 

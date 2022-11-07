@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Bus {
 
-    static int [] arr=new int [50];
     //coded by Manith Jayaba D/BCE/22/0006
 
     static int count=0;
@@ -38,7 +37,6 @@ public class Bus {
         }
         int option;
 
-            s[count].setBooked(true);
             n[count].addNewName();
             pas[count].addNewPassengerFromKB();
             System.out.println("Enter ticket choice\n" +
@@ -51,14 +49,11 @@ public class Bus {
             switch (option){
                 case 1:
                     ft[count].price();
-                    s[count].setBooked(true);
                     //coded by Manith Jayaba D/BCE/22/0006
                     count=count+1;
-                    arr[count]=count;
                     break;
                 case 2:
                     ht[count].price();
-                    s[count].setBooked(true);
                     count=count+1;
                     break;
                 default:
